@@ -1,0 +1,122 @@
+﻿<Window x:Class="Women_in_Tech.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Women_in_Tech"
+        mc:Ignorable="d" Background="AliceBlue"
+        Title="Registration form" Height="650" Width="1250">
+    <Grid Margin="10,10,10,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.05*" />
+            <RowDefinition Height="0.85*"/>
+            <RowDefinition Height="0.10*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                   Background="Purple"/>
+        <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+            <Border BorderBrush="Beige" BorderThickness="3">
+                <Label  FontSize="40" 
+                    HorizontalAlignment="Center"
+                    >All About TwittHER WITH Shweta Gurnani
+                </Label>
+            </Border>
+
+            <Image Source="/image/WhatsApp Image 2021-08-23 at 1.00.51 PM.jpeg"
+                   Width="300" HorizontalAlignment="Left"
+                   Height="200">
+            </Image>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="0" 
+                    Margin="0,270,0,0">
+            <Border Background="White" BorderBrush="Beige"
+                    BorderThickness="3" Margin="0,10,50,0">
+                <Label FontSize="30" FontFamily="Segoe UI Light">What is Your name</Label>
+            </Border>
+            <TextBox x:Name="nameTextbox" Height="35"
+                     Margin="0,5,50,0" BorderBrush="Beige"
+                     BorderThickness="3" FontSize="20"/>
+            <Border Background="White" BorderBrush="Beige"
+                    BorderThickness="3" Margin="0,10,50,0">
+                <Label FontSize="30" FontFamily="Segoe UI Light">Your Email Id</Label>
+            </Border>
+            <TextBox x:Name="IdTextbox" Height="35"
+                     Margin="0,5,50,0" BorderBrush="Beige"
+                     BorderThickness="3" FontSize="20"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" 
+                    Margin="0,55,0,0">
+            <Border Background="White" BorderBrush="Beige"
+                    BorderThickness="3" Margin="50,10,0,0">
+                <Label FontSize="30" FontFamily="Segoe UI Light">College Name</Label>
+            </Border>
+            <TextBox x:Name="collegeTextbox" Height="35"
+                     Margin="50,5,0,0" BorderBrush="Beige"
+                     BorderThickness="3" FontSize="20"/>
+            <Border Background="White" BorderBrush="Beige"
+                    BorderThickness="3" Margin="50,10,0,0">
+                <Label FontSize="30" FontFamily="Segoe UI Light">WhatsApp Number</Label>
+            </Border>
+            <TextBox x:Name="whatsappTextbox" Height="35"
+                     Margin="50,5,0,0" BorderBrush="Beige"
+                     BorderThickness="3" FontSize="20"/>
+            <Border Background="White" BorderBrush="Beige"
+                    BorderThickness="3" Margin="50,10,0,0">
+                <Label FontSize="30" FontFamily="Segoe UI Light">Wants to join Eduhub</Label>
+            </Border>
+            <RadioButton x:Name="radioButton1" Margin="50,5,0,0" VerticalContentAlignment="Center"
+                         FontSize="30" Checked="radioButton1_Checked"
+                         Unchecked="radioButton1_Unchecked">
+                <WrapPanel>
+                    <Border Background="White" BorderBrush="Beige"
+                            BorderThickness="3">
+                    <Label Name="yesLabel" FontFamily="Segoe UI Light">Yes
+                    </Label>
+                    </Border>
+                </WrapPanel>
+            </RadioButton>
+            <RadioButton x:Name="radioButton2" Margin="50,5,0,0" VerticalContentAlignment="Center"
+                         FontSize="30" Checked="radioButton2_Checked"
+                         Unchecked="radioButton2_Unchecked">
+                <WrapPanel>
+                    <Border Background="White" BorderBrush="Beige">
+                    <Label Name="noLabel" FontFamily="Segoe UI Light">No
+                    </Label>
+                    </Border>
+                </WrapPanel>
+            </RadioButton>
+            <StackPanel Orientation="Horizontal">
+            <Button x:Name="summitButton" Foreground="Purple"
+                    Background="White" FontSize="20" Click="summitButton_Click"
+                   Height="35" HorizontalAlignment="Left"
+                    Margin="50,5,0,0" Width="100" BorderBrush="White">Summit
+            </Button>
+                <Button x:Name="clearButton" Foreground="Purple"
+                    Background="AliceBlue" FontSize="20" Click="clearButton_Click"
+                   Height="35" HorizontalAlignment="Right"
+                    Margin="350,5,0,0" Width="100" BorderBrush="White">Clear form
+                </Button>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
+            <Label Foreground="DarkBlue" FontSize="15"
+                   >Never summit through forms.</Label>
+            <TextBlock FontSize="15" Foreground="DarkBlue"
+                   >This content is neither created nor endorsed by Google.
+                <Hyperlink NavigateUri="https://docs.google.com/forms/u/0/d/e/1FAIpQLSchn_fJrvecZ7tSZMT1FueYvy_WGJXyNP7T9yAhIW-Buq7qMA/reportabuse?source=https://docs.google.com/forms/d/e/1FAIpQLSchn_fJrvecZ7tSZMT1FueYvy_WGJXyNP7T9yAhIW-Buq7qMA/viewform"
+                           RequestNavigate="Hyperlink_RequestNavigate">Report Abuse</Hyperlink> - 
+                <Hyperlink NavigateUri="https://policies.google.com/terms"
+                           RequestNavigate="Hyperlink_RequestNavigate_1">Terms and Service</Hyperlink> - 
+                <Hyperlink NavigateUri="https://policies.google.com/privacy"
+                           RequestNavigate="Hyperlink_RequestNavigate_2"
+                           >Policy Privacy</Hyperlink>. 
+                <Span FontSize="25"><Bold>Google Forms</Bold></Span>
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>
